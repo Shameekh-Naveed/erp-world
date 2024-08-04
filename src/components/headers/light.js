@@ -17,6 +17,7 @@ const Header = tw.header`
 
 export const NavLinks = tw.div`inline-block`;
 
+
 /* hocus: stands for "on hover or focus"
  * hocus:bg-primary-700 will apply the bg-primary-700 class on hover or focus
  */
