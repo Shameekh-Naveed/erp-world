@@ -89,9 +89,9 @@ export default ({
 							quality education and fostering a positive learning environment. Join us in revolutionizing
 							educational management and discover the power of ERP World today.
 						</Description>
-						<PrimaryButton buttonRounded={buttonRounded} as='a' href={primaryButtonUrl}>
+						{/* <PrimaryButton buttonRounded={buttonRounded} as='a' href={primaryButtonUrl}>
 							{primaryButtonText}
-						</PrimaryButton>
+						</PrimaryButton> */}
 					</TextContent>
 				</TextColumn>
 			</TwoColumn>

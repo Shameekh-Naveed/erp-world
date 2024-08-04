@@ -95,7 +95,7 @@ import SaaSProductLandingPage from 'demos/SaaSProductLandingPage.js';
 // import SignupPage from "pages/Signup.js";
 // import PricingPage from "pages/Pricing.js";
 // import AboutUsPage from "pages/AboutUs.js";
-// import ContactUsPage from "pages/ContactUs.js";
+import ContactUsPage from "pages/ContactUs.js";
 // import BlogIndexPage from "pages/BlogIndex.js";
 // import TermsOfServicePage from "pages/TermsOfService.js";
 // import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
@@ -118,6 +118,7 @@ export default function App() {
 					<Route path='/components/:type/:subtype/:name' element={<ComponentRenderer />} />
 					<Route path='/components/:type/:name' element={<ComponentRenderer />} />
 					<Route path='/thank-you' element={<ThankYouPage />} />
+					<Route path='/contact-us' element={<ContactUsPage />} />
 					<Route path='/' element={<SaaSProductLandingPage />} />
 				</Routes>
 			</Router>

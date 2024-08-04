@@ -111,7 +111,7 @@ export default ({
 						<CloseIcon tw='w-6 h-6' />
 					</CloseModalButton>
 					<div className='content'>
-						<ResponsiveVideoEmbed url={watchVideoYoutubeUrl} tw='w-full' />
+						{/* <ResponsiveVideoEmbed url={watchVideoYoutubeUrl} tw='w-full' /> */}
 					</div>
 				</StyledModal>
 			</Container>

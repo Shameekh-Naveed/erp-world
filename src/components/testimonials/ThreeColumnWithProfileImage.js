@@ -8,11 +8,11 @@ import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-7
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-8.svg";
 
 const Subheading = tw(SubheadingBase)`text-center`;
-const Testimonials = tw.div`flex flex-col lg:flex-row items-center lg:items-stretch`;
+const Testimonials = tw.div`flex flex-col lg:flex-row items-center justify-center lg:items-stretch`;
 const TestimonialContainer = tw.div`mt-16 lg:w-1/3`;
 const Testimonial = tw.div`px-4 text-center max-w-xs mx-auto flex flex-col items-center`;
 const Image = tw.img`w-20 h-20 rounded-full`;
-const Quote = tw.blockquote`mt-5 text-gray-600 font-medium leading-loose`;
+const Quote = tw.blockquote`mt-5 text-gray-600 font-medium text-justify leading-loose`;
 const CustomerName = tw.p`mt-5 text-gray-900 font-semibold uppercase text-sm tracking-wide`;
 
 const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
