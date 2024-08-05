@@ -160,8 +160,7 @@ export default () => {
 			<DownloadApp
 				text={
 					<>
-						Experience the convenience of ERP World at your fingertips. Join thousands of users who are
-						transforming their educational experience with our app.
+						Experience the convenience of ERP World at your fingertips. 
 						<HighlightedTextInverse>Get started now!</HighlightedTextInverse>
 					</>
 				}
