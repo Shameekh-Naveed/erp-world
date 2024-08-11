@@ -61,7 +61,7 @@ const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-p
 export default ({
 	heading = 'Revolutionize Your Organization with ERP World',
 	description = 'Simplify school management and enhance the learning experience. ERP World offers a comprehensive platform for administration, teachers, parents, and students. Streamline operations, improve communication, and make informed decisions with our powerful tools.',
-	primaryButtonText = 'Get Started',
+	primaryButtonText = 'Visit ERP',
 	primaryButtonUrl = '#',
 	watchVideoButtonText = 'Watch Video',
 	watchVideoYoutubeUrl = 'https://www.youtube.com/embed/_GuOjXYl5ew',

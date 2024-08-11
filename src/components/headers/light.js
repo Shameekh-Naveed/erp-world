@@ -6,7 +6,8 @@ import { css } from 'styled-components/macro'; //eslint-disable-line
 
 import useAnimatedNavToggler from '../../helpers/useAnimatedNavToggler.js';
 
-import logo from '../../images/logo.svg';
+import logo from '../../images/logo.jpeg';
+import logoFull from '../../images/logo-full.png';
 import { ReactComponent as MenuIcon } from 'feather-icons/dist/icons/menu.svg';
 import { ReactComponent as CloseIcon } from 'feather-icons/dist/icons/x.svg';
 
@@ -16,7 +17,6 @@ const Header = tw.header`
 `;
 
 export const NavLinks = tw.div`inline-block`;
-
 
 /* hocus: stands for "on hover or focus"
  * hocus:bg-primary-700 will apply the bg-primary-700 class on hover or focus
@@ -57,6 +57,8 @@ export const DesktopNavLinks = tw.nav`
   hidden lg:flex flex-1 justify-between items-center
 `;
 
+const LogoImage = tw.img`w-24`;
+
 export default ({ roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = 'lg' }) => {
 	/*
 	 * This header component accepts an optionals "links" prop that specifies the links to render in the navbar.
@@ -74,14 +76,14 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 	const defaultLinks = [
 		<NavLinks key={1}>
 			<NavLink href='/#'>About</NavLink>
-			<NavLink href='/#'>Blog</NavLink>
-			<NavLink href='/#'>Pricing</NavLink>
+			{/* <NavLink href='/#'>Blog</NavLink>
+			<NavLink href='/#'>Pricing</NavLink> */}
 			<NavLink href='/contact-us'>Contact Us</NavLink>
-			<NavLink href='/#' tw='lg:ml-12!'>
+			{/* <NavLink href='/#' tw='lg:ml-12!'>
 				Login
-			</NavLink>
+			</NavLink> */}
 			<PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href='/#'>
-				Sign Up
+				Visit ERP
 			</PrimaryLink>
 		</NavLinks>,
 	];
@@ -102,7 +104,8 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 	return (
 		<Header className={className || 'header-light'}>
 			<DesktopNavLinks css={collapseBreakpointCss.desktopNavLinks}>
-				{logoLink}
+				<LogoImage src={logoFull} alt='Hero' />
+				{/* {logoLink} */}
 				{links}
 			</DesktopNavLinks>
 

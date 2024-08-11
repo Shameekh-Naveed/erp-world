@@ -7,7 +7,7 @@ import MainFeature from 'components/features/TwoColWithButton.js';
 import MainFeature2 from 'components/features/TwoColWithTwoHorizontalFeaturesAndButton.js';
 import FeatureWithSteps from 'components/features/TwoColWithSteps.js';
 import FAQ from 'components/faqs/SingleCol.js';
-import Footer from 'components/footers/FiveColumnWithBackground.js';
+import Footer from 'components/footers/MiniCenteredFooter';
 import heroScreenshotImageSrc from 'images/hero-screenshot-1.png';
 import macHeroScreenshotImageSrc from 'images/hero-screenshot-2.png';
 import StatsSection from 'components/features/TwoColSingleFeatureWithStats2.js';
@@ -37,17 +37,12 @@ export default () => {
 				subheading={<Subheading>Revolutionizing Educational Management</Subheading>}
 				imageSrc={heroScreenshotImageSrc}
 				imageBorder={true}
+				imageShadow={true}
 				imageDecoratorBlob={true}
 			/>
 			<FeatureWithSteps
 				subheading={<Subheading>STEPS</Subheading>}
-				heading={
-					<>
-						Easy to <HighlightedText>Get Started.</HighlightedText>
-					</>
-				}
 				textOnLeft={false}
-				imageSrc={macHeroScreenshotImageSrc}
 				imageDecoratorBlob={true}
 				decoratorBlobCss={tw`xl:w-40 xl:h-40 opacity-15 -translate-x-1/2 left-1/2`}
 			/>
@@ -103,8 +98,7 @@ export default () => {
 						imageSrc:
 							'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80',
 						heading: 'Love the Developer Experience and Design Principles !',
-						quote: `ERP World has been a fantastic resource for me as a parent.
- I can easily monitor my child's attendance, grades, and upcoming events. The communication features allow me to stay connected with the school and teachers. It's a great tool for fostering parent-teacher collaboration`,
+						quote: `ERP World has been a fantastic resource for me as a parent. I can easily monitor my child's attendance, grades, and upcoming events. The communication features allow me to stay connected with the school and teachers. It's a great tool for fostering parent-teacher collaboration`,
 						customerName: 'Shameekh Naveed',
 						customerTitle: 'Founder, EventsNYC',
 					},
@@ -160,7 +154,7 @@ export default () => {
 			<DownloadApp
 				text={
 					<>
-						Experience the convenience of ERP World at your fingertips. 
+						Experience the convenience of ERP World at your fingertips.
 						<HighlightedTextInverse>Get started now!</HighlightedTextInverse>
 					</>
 				}

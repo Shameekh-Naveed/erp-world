@@ -19,7 +19,7 @@ const TextColumn = styled(Column)((props) => [
 const Image = styled.img((props) => [
 	props.imageRounded && tw`rounded`,
 	props.imageBorder && tw`border`,
-	props.imageShadow && tw`shadow`,
+	props.imageShadow && tw`shadow-2xl`,
 ]);
 
 const DecoratorBlob = styled(SvgDotPattern)((props) => [
@@ -46,11 +46,7 @@ export default ({
 			Designed & Developed by <span tw='text-primary-500'>Professionals.</span>
 		</>
 	),
-	description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-	primaryButtonText = 'Learn More',
-	primaryButtonUrl = 'https://timerse.com',
 	imageSrc = TeamIllustrationSrc,
-	buttonRounded = true,
 	imageRounded = true,
 	imageBorder = false,
 	imageShadow = false,

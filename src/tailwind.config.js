@@ -21,7 +21,7 @@ module.exports = {
 				200: '#935bff',
 				300: '#8344ff',
 				400: '#98B9F2', //updated
-				500: '#918EF4', //updated
+				500: '#00acec', //updated
 				600: '#5a13e6',
 				700: '#306BAC', //updated
 				800: '#460fb3',

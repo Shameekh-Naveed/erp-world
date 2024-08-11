@@ -3,18 +3,19 @@ import tw from 'twin.macro';
 import styled from 'styled-components';
 import { css } from 'styled-components/macro'; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from 'components/misc/Headings.js';
-import TeamIllustrationSrc from 'images/team-illustration-2.svg';
+import WebMockup from 'images/WebMockups/3.png';
+import MobileMockup from 'images/mobile-mockup.png';
 import { ReactComponent as SvgDotPattern } from 'images/dot-pattern.svg';
 import { ReactComponent as BriefcaseIcon } from 'feather-icons/dist/icons/briefcase.svg';
 import { ReactComponent as MoneyIcon } from 'feather-icons/dist/icons/dollar-sign.svg';
 
 const Container = tw.div`relative flex flex-col items-center`;
-const TwoColumnContainer = tw.div`py-20 md:py-24 flex flex-col items-center`;
+const TwoColumnContainer = tw.div`pb-20 md:pb-24 flex flex-col items-center`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-8 items-center`;
 const HighlightedText = tw.span`text-primary-500`;
 
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
-const ImageColumn = tw(Column)`md:w-6/12 flex-shrink-0 relative`;
+const ImageColumn = tw(Column)`md:w-6/12 flex-shrink-0 relative flex justify-center`;
 const TextColumn = styled(Column)((props) => [
 	tw`md:w-6/12 mt-16 md:mt-0`,
 	props.textOnLeft ? tw`md:mr-12 lg:mr-16 md:order-first` : tw`md:ml-12 lg:ml-16 md:order-last`,
@@ -25,6 +26,11 @@ const Image = styled.img((props) => [
 	props.imageBorder && tw`border`,
 	props.imageShadow && tw`shadow`,
 ]);
+
+const MobileImg = styled.img(
+	(props) => [props.imageRounded && tw`rounded`, props.imageBorder && tw`border`, props.imageShadow && tw`shadow`],
+	tw`h-[30rem] w-auto`
+);
 
 const DecoratorBlob = styled(SvgDotPattern)(() => [
 	tw`w-20 h-20 absolute right-0 bottom-0 transform translate-x-1/2 translate-y-1/2 fill-current text-primary-500 -z-10`,
@@ -64,16 +70,11 @@ const FeatureIconContainer = styled.div`
 `;
 const FeatureHeading = tw.div`ml-3 font-bold text-xl`;
 
-const FeatureDescription = tw.div`mt-4 text-center md:text-left text-gray-600 leading-relaxed`;
+const FeatureDescription = tw.div`mt-4 text-center md:text-justify text-gray-600 leading-relaxed`;
 
 export default ({
 	subheading = 'Our Expertise',
-	heading = (
-		<>
-			Designed & Developed by <span tw='text-primary-500'>Professionals.</span>
-		</>
-	),
-	imageSrc = TeamIllustrationSrc,
+	imageSrc = WebMockup,
 	imageRounded = true,
 	imageBorder = false,
 	imageShadow = false,
@@ -176,7 +177,7 @@ export default ({
 						/>
 						{imageDecoratorBlob && <DecoratorBlob css={decoratorBlobCss} />}
 					</ImageColumn>
-					<TextColumn textOnLeft={textOnLeft}>
+					<TextColumn textOnLeft={true}>
 						<TextContent>
 							<HeadingMinor>
 								<HighlightedText>Web Portal:</HighlightedText> Administration and Management
@@ -209,8 +210,8 @@ export default ({
 			<TwoColumnContainer>
 				<TwoColumn>
 					<ImageColumn>
-						<Image
-							src={imageSrc}
+						<MobileImg
+							src={MobileMockup}
 							imageBorder={imageBorder}
 							imageShadow={imageShadow}
 							imageRounded={imageRounded}
