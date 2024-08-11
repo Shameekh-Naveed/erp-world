@@ -67,7 +67,7 @@ export default ({
 		},
 		{
 			key: 'Schools',
-			value: '20+',
+			value: '50+',
 		},
 		{
 			key: 'Awards',
