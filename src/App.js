@@ -39,7 +39,7 @@ export default function App() {
 			<GlobalStyles />
 			<Router>
 				<Routes>
-					<Route path='/thank-you' element={<ThankYouPage />} />
+					{/* <Route path='/thank-you' element={<ThankYouPage />} /> */}
 					<Route path='/contact-us' element={<ContactUsPage />} />
 					<Route path='/' element={<SaaSProductLandingPage />} />
 				</Routes>
