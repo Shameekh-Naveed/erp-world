@@ -10,7 +10,7 @@ import { ReactComponent as YoutubeIcon } from '../../images/youtube-icon.svg';
 const Container = tw(ContainerBase)`bg-primary-500 text-gray-100 -mx-8 -mb-8`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 
-const Row = tw.div`flex items-center justify-center px-8 gap-12`;
+const Row = tw.div`flex flex-col md:flex-row items-center justify-center px-8 gap-12`;
 
 const Ball = tw.div`h-2 w-2 bg-gray-100 rounded-full`;
 
