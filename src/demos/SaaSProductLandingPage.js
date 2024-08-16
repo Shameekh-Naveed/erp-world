@@ -18,6 +18,7 @@ import styled from 'styled-components';
 import Testimonial from 'components/testimonials/ThreeColumnWithProfileImage.js';
 import DownloadApp from 'components/cta/DownloadApp.js';
 import MazenLogo from 'images/mazen.jpeg';
+import ConceptLogo from 'images/concept-school-logo.png';
 
 export default () => {
 	const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
@@ -179,11 +180,11 @@ const LogoImage = styled.img`
 const Brands = () => (
 	<BrandsContainer>
 		<ContentContainer>
-			<Heading>Trusted by the world’s most innovative teams</Heading>
+			<Heading>Trusted by Pakistans most innovative schools</Heading>
 			<LogosGrid>
 				<LogoImage
 					src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVR-ObVGXjPcpMsc2ukHadEJCCTQDAavONiA&s'
-					alt='Transistor'
+					alt='Dar-e-Arqam Schools'
 					width={158}
 					height={48}
 					lgColSpan1
@@ -191,7 +192,15 @@ const Brands = () => (
 				<LogoImage
 					src={MazenLogo}
 					// src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVR-ObVGXjPcpMsc2ukHadEJCCTQDAavONiA&s'
-					alt='Transistor'
+					alt='Mazen Schools'
+					width={158}
+					height={48}
+					lgColSpan1
+				/>
+				<LogoImage
+					src={ConceptLogo}
+					// src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVR-ObVGXjPcpMsc2ukHadEJCCTQDAavONiA&s'
+					alt='Concept Schools'
 					width={158}
 					height={48}
 					lgColSpan1
