@@ -20,11 +20,11 @@ import SimpleIconImage from 'images/simple-icon.svg';
 const Container = tw.div`relative`;
 
 const ThreeColumnContainer = styled.div`
-	${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-20 md:py-24`}
+	${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-xl mx-auto py-20 md:py-24`}
 `;
 const Subheading = tw(SubheadingBase)`mb-4`;
 const Heading = tw(SectionHeading)`w-full`;
-const Description = tw(SectionDescription)`w-full text-center`;
+const Description = tw(SectionDescription)`w-full text-justify`;
 
 const VerticalSpacer = tw.div`mt-10 w-full`;
 
@@ -81,20 +81,17 @@ export default ({
 		{
 			imageSrc: ShieldIconImage,
 			title: 'Data-Driven Insights',
-			description:
-				'Make informed decisions with comprehensive reports and analytics on student performance and school operations',
+			description: 'Make informed decisions with comprehensive reports and analytics on student performance and school operations',
 		},
 		{
 			imageSrc: ShieldIconImage,
 			title: 'Seamless Integration',
-			description:
-				'Effortlessly combine financial, human resources, and academic management into one unified platform.',
+			description: 'Effortlessly combine financial, human resources, and academic management into one unified platform.',
 		},
 		{
 			imageSrc: ShieldIconImage,
 			title: 'Customizable Reporting',
-			description:
-				'Generate tailored reports to track key performance indicators and make data-driven decisions.',
+			description: 'Generate tailored reports to track key performance indicators and make data-driven decisions.',
 		},
 		{
 			imageSrc: ShieldIconImage,
@@ -104,8 +101,7 @@ export default ({
 		{
 			imageSrc: ShieldIconImage,
 			title: 'Automated Notifications',
-			description:
-				'Receive real-time alerts and reminders for important events, deadlines, and tasks, keeping everyone informed and on track.',
+			description: 'Receive real-time alerts and reminders for important events, deadlines, and tasks, keeping everyone informed and on track.',
 		},
 	];
 
@@ -126,9 +122,8 @@ export default ({
 							</span>
 							<span className='textContainer'>
 								<span className='title'>{card.title || 'Fully Secure'}</span>
-								<p className='description'>
-									{card.description ||
-										'Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.'}
+								<p className='description' style={{ textAlign: 'justify' }}>
+									{card.description || 'Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.'}
 								</p>
 							</span>
 						</Card>

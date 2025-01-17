@@ -26,9 +26,10 @@ import { css } from 'styled-components/macro'; //eslint-disable-line
 import SaaSProductLandingPage from 'demos/SaaSProductLandingPage.js';
 import ContactUsPage from 'pages/ContactUs.js';
 
-import ThankYouPage from 'ThankYouPage.js';
+// import ThankYouPage from 'ThankYouPage.js';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AgencyLandingPage from 'demos/AgencyLandingPage';
 
 export default function App() {
 	// If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -41,6 +42,7 @@ export default function App() {
 				<Routes>
 					{/* <Route path='/thank-you' element={<ThankYouPage />} /> */}
 					<Route path='/contact-us' element={<ContactUsPage />} />
+					<Route path='/financial' element={<AgencyLandingPage />} />
 					<Route path='/' element={<SaaSProductLandingPage />} />
 				</Routes>
 			</Router>

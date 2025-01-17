@@ -76,6 +76,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 	const defaultLinks = [
 		<NavLinks key={1}>
 			<NavLink href='/#'>About</NavLink>
+			<NavLink href='/financial'>Financial Services</NavLink>
 			{/* <NavLink href='/#'>Blog</NavLink>
 			<NavLink href='/#'>Pricing</NavLink> */}
 			<NavLink href='/contact-us'>Contact Us</NavLink>
@@ -111,10 +112,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 
 			<MobileNavLinksContainer css={collapseBreakpointCss.mobileNavLinksContainer}>
 				{logoLink}
-				<MobileNavLinks
-					initial={{ x: '150%', display: 'none' }}
-					animate={animation}
-					css={collapseBreakpointCss.mobileNavLinks}>
+				<MobileNavLinks initial={{ x: '150%', display: 'none' }} animate={animation} css={collapseBreakpointCss.mobileNavLinks}>
 					{links}
 				</MobileNavLinks>
 				<NavToggle onClick={toggleNavbar} className={showNavLinks ? 'open' : 'closed'}>
