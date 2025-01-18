@@ -8,6 +8,8 @@ import Header from '../headers/light.js';
 
 import { ReactComponent as SvgDecoratorBlob1 } from '../../images/svg-decorator-blob-1.svg';
 import DesignIllustration from '../../images/hero.svg';
+import MazenLogo from 'images/mazen.jpeg';
+import ConceptLogo from 'images/concept-school-logo.png';
 import CustomersLogoStripImage from '../../images/customers-logo-strip.png';
 
 const Container = tw.div`relative`;
@@ -17,6 +19,9 @@ const RightColumn = tw.div`relative mt-12 lg:mt-0 flex-1 flex h-full flex-col ju
 
 const Heading = tw.h1`font-bold text-3xl md:text-3xl lg:text-4xl xl:text-5xl text-gray-900 leading-tight`;
 const Paragraph = tw.p`my-5 lg:my-8 text-base xl:text-lg`;
+
+const ImagesStrip = tw.div`flex items-center justify-start gap-6 my-2 py-1`;
+const Image = tw.img`w-auto h-12 lg:w-auto lg:h-16 w-full opacity-75`;
 
 const Actions = styled.div`
 	${tw`relative max-w-md text-center mx-auto lg:mx-0`}
@@ -39,9 +44,6 @@ const CustomersLogoStrip = styled.div`
 	${tw`mt-12 lg:mt-20`}
 	p {
 		${tw`uppercase text-sm lg:text-xs tracking-wider font-bold text-gray-500`}
-	}
-	img {
-		${tw`mt-4 w-full lg:pr-16 xl:pr-32 opacity-50`}
 	}
 `;
 
@@ -66,8 +68,13 @@ export default ({ roundedHeaderButton }) => {
               <button>Get Started</button>
             </Actions> */}
 						<CustomersLogoStrip>
-							<p>Our TRUSTED Customers</p>
-							<img src={CustomersLogoStripImage} alt='Our Customers' />
+							<p>Our TRUSTED Clients</p>
+							<ImagesStrip>
+								<Image src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVR-ObVGXjPcpMsc2ukHadEJCCTQDAavONiA&s'} />
+								<Image src={MazenLogo} />
+								<Image src={ConceptLogo} />
+							</ImagesStrip>
+							{/* <img src={CustomersLogoStripImage} alt='Our Customers' /> */}
 						</CustomersLogoStrip>
 					</LeftColumn>
 					<RightColumn>

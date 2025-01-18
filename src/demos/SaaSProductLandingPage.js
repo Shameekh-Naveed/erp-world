@@ -61,15 +61,13 @@ export default () => {
 					{
 						Icon: MoneyIcon,
 						title: 'Innovation',
-						description:
-							'Continuously developing and implementing cutting-edge solutions to stay ahead in educational management.',
+						description: 'Continuously developing and implementing cutting-edge solutions to stay ahead in educational management.',
 						iconContainerCss: tw`bg-green-300 text-green-800`,
 					},
 					{
 						Icon: BriefcaseIcon,
 						title: 'Reliability',
-						description:
-							'Ensuring that our platform is secure, dependable, and available whenever you need it.',
+						description: 'Ensuring that our platform is secure, dependable, and available whenever you need it.',
 						iconContainerCss: tw`bg-red-300 text-red-800`,
 					},
 				]}
@@ -138,8 +136,7 @@ export default () => {
 						answer: 'Yes, ERP World provides powerful tools for generating detailed and customized reports on various aspects of school operations, including attendance, finances, and academic performance.',
 					},
 					{
-						question:
-							'How does ERP World facilitate communication between parents, students, and teachers?',
+						question: 'How does ERP World facilitate communication between parents, students, and teachers?',
 						answer: 'ERP World includes features like instant messaging, daily diaries, and notices, ensuring seamless and effective communication between all parties involved.',
 					},
 					{
@@ -189,14 +186,7 @@ const Brands = () => (
 					height={48}
 					lgColSpan1
 				/>
-				<LogoImage
-					src={MazenLogo}
-					// src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVR-ObVGXjPcpMsc2ukHadEJCCTQDAavONiA&s'
-					alt='Mazen Schools'
-					width={158}
-					height={48}
-					lgColSpan1
-				/>
+				<LogoImage src={MazenLogo} alt='Mazen Schools' width={158} height={48} lgColSpan1 />
 				<LogoImage
 					src={ConceptLogo}
 					// src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVR-ObVGXjPcpMsc2ukHadEJCCTQDAavONiA&s'
