@@ -30,7 +30,7 @@ const SocialLink = styled.a`
 `;
 
 const CopyrightText = tw.p`text-center mt-10 font-medium tracking-wide text-sm text-gray-600`;
-export default () => {
+export default ({ variant = 1 }) => {
 	return (
 		<Container>
 			<Content>
@@ -60,7 +60,7 @@ export default () => {
 						</SocialLink>
 					</SocialLinksContainer>
 				</Row>
-				<CopyrightText>&copy; Copyright 2024, ERP World. All Rights Reserved.</CopyrightText>
+				<CopyrightText>&copy; Copyright 2025, ERP World. All Rights Reserved.</CopyrightText>
 			</Content>
 		</Container>
 	);

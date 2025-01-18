@@ -63,6 +63,7 @@ export default ({
 	heading = 'Amazing Features',
 	subheading = 'Features',
 	description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+	variant = 1,
 }) => {
 	/*
 	 * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
@@ -110,7 +111,7 @@ export default ({
 	return (
 		<Container>
 			<ThreeColumnContainer>
-				{subheading && <Subheading>{subheading}</Subheading>}
+				{subheading && <Subheading css={variant === 2 ? tw`text-primaryy-500` : ''}>{subheading}</Subheading>}
 				<Heading>{heading}</Heading>
 				{description && <Description>{description}</Description>}
 				<VerticalSpacer />
@@ -121,7 +122,7 @@ export default ({
 								<img src={card.imageSrc || defaultCardImage} alt='' />
 							</span>
 							<span className='textContainer'>
-								<span className='title'>{card.title || 'Fully Secure'}</span>
+								<span className={`title`}>{card.title || 'Fully Secure'}</span>
 								<p className='description' style={{ textAlign: 'justify' }}>
 									{card.description || 'Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.'}
 								</p>

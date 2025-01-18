@@ -61,6 +61,7 @@ export default ({
 	linkText = 'View all Projects',
 	cardLinkText = 'Read Case Study',
 	textOnLeft = false,
+	variant = 1,
 }) => {
 	const cards = [
 		{
@@ -88,7 +89,7 @@ export default ({
 				<ThreeColumn>
 					<HeadingColumn textOnLeft={textOnLeft}>
 						<HeadingInfoContainer>
-							<Subheading>{subheading}</Subheading>
+							<Subheading css={variant === 2 ? tw`text-primaryy-500` : ''}>{subheading}</Subheading>
 							<HeadingTitle>{headingHtmlComponent}</HeadingTitle>
 							<HeadingDescription>{description}</HeadingDescription>
 							<PrimaryLink>

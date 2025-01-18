@@ -27,6 +27,12 @@ module.exports = {
 				800: '#460fb3',
 				900: '#141B41', //updated
 			},
+			primaryy: {
+				400: '#98B9F2', //
+				500: '#3d56ab', //updated
+				700: '#306BAC', //
+				900: '#141B41', //
+			},
 
 			secondary: {
 				100: '#7c8ba1',

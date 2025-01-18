@@ -13,39 +13,59 @@ import Testimonial from 'components/testimonials/TwoColumnWithImageAndProfilePic
 import FAQ from 'components/faqs/SimpleWithSideImage.js';
 import ContactUsForm from 'components/forms/TwoColContactUsWithIllustration.js';
 import Footer from 'components/footers/MiniCenteredFooter';
-import customerSupportIllustrationSrc from 'images/customer-support-illustration.svg';
-import ShieldIconImage from 'images/shield-icon.svg';
+import customerSupportIllustrationSrc from 'images/faq.svg';
+import Audit from 'images/icons8/audit.png';
+import Auditing from 'images/icons8/auditing.png';
+import DocumentVerification from 'images/icons8/document_verifications.png';
+import FinancialReporting from 'images/icons8/financial_reporting.png';
+import Taxation from 'images/icons8/taxation.png';
+import BlogSection from 'components/custom/blogSection';
 
 const expertiseCards = [
 	{
-		imageSrc: ShieldIconImage,
+		imageSrc: Auditing,
 		title: 'Financial Auditing',
 		description:
 			'We provide thorough audits to ensure that your organization’s Standard Operating Procedures (SOPs) are effective and strictly followed. From monthly receipt collection audits to verifying outstanding accounts, we leave no detail unchecked.',
 	},
 	{
-		imageSrc: ShieldIconImage,
+		imageSrc: Taxation,
 		title: 'Taxation Services',
 		description:
 			' Our team specializes in optimizing tax strategies, minimizing waste, and ensuring compliance with the Federal Board of Revenue (FBR). We help you present accurate data and reduce unnecessary tax burdens, giving you peace of mind.',
 	},
 	{
-		imageSrc: ShieldIconImage,
+		imageSrc: FinancialReporting,
 		title: 'Monthly and Annual Financial Reporting',
 		description:
 			'Understanding your organization’s financial health is crucial. We provide detailed profit and loss reports, analyze liabilities, and explain the rationale behind each financial decision to help you make informed choices.',
 	},
 	{
-		imageSrc: ShieldIconImage,
+		imageSrc: DocumentVerification,
 		title: 'Documentation & Verification',
 		description:
 			' Accurate documentation is the backbone of financial integrity. We assist with organizing and verifying records, ensuring that all supporting documents are in place for smooth operations.',
 	},
 	{
-		imageSrc: ShieldIconImage,
+		imageSrc: Audit,
 		title: 'Procurement Audits',
 		description:
 			'From purchase requisitions to payments and asset deliveries, we ensure that every step in your procurement process is efficient and compliant with established policies.',
+	},
+];
+
+const statistics = [
+	{
+		key: 'Years',
+		value: '20+',
+	},
+	{
+		key: 'Institutes',
+		value: '10+',
+	},
+	{
+		key: 'Saved in finances',
+		value: '$$$',
 	},
 ];
 
@@ -53,9 +73,10 @@ export default () => (
 	<AnimationRevealPage>
 		<Hero />
 		<MainFeature
+			statistics={statistics}
 			heading={
 				<>
-					Partner with us for a transparent, reliable path to <span tw='text-primary-500'>lasting financial success!</span>
+					Partner with us for a transparent, reliable path to <span tw='text-primaryy-500'>lasting financial success!</span>
 				</>
 			}
 			description=' We are dedicated to providing exceptional financial auditing, taxation, and
@@ -64,15 +85,18 @@ export default () => (
  experience and a proven track record, we’ve successfully helped
  organizations streamline their financial operations, improve collection
  processes, and ensure compliance with regulatory standards.'
+			variant={2}
 		/>
 		<Features
-			heading=' Our Expertise'
+			heading='Our Expertise'
 			description='Delivering precision-driven financial services to optimize compliance, efficiency, and growth'
 			cards={expertiseCards}
+			variant={2}
 		/>
-		<MainFeature2 />
-		<Portfolio />
-		<Testimonial
+		<MainFeature2 variant={2} />
+		{/* <Portfolio variant={2} /> */}
+		<BlogSection />
+		{/* <Testimonial
 			subheading='Testimonials'
 			heading={
 				<>
@@ -100,7 +124,7 @@ export default () => (
 				},
 			]}
 			textOnLeft={true}
-		/>
+		/> */}
 		<FAQ
 			imageSrc={customerSupportIllustrationSrc}
 			imageContain={true}
@@ -110,13 +134,14 @@ export default () => (
 			faqs={faqs}
 			heading={
 				<>
-					Do you have <span tw='text-primary-500'>Questions ?</span>
+					Do you have <span tw='text-primaryy-500'>Questions ?</span>
 				</>
 			}
+			variant={2}
 		/>
 		{/* <Blog /> */}
 		{/* <ContactUsForm /> */}
-		<Footer />
+		<Footer variant={2} />
 	</AnimationRevealPage>
 );
 

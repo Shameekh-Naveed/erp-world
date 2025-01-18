@@ -28,14 +28,14 @@ const Features = tw.div`mt-8 max-w-sm mx-auto md:mx-0`;
 const Feature = tw.div`mt-8 flex items-start flex-col md:flex-row`;
 
 const FeatureIconContainer = styled.div`
-	${tw`mx-auto inline-block border border-primary-500 text-center rounded-full p-2 flex-shrink-0`}
+	${tw`mx-auto inline-block border border-primaryy-500 text-center rounded-full p-2 flex-shrink-0`}
 	svg {
-		${tw`w-5 h-5 text-primary-500`}
+		${tw`w-5 h-5 text-primaryy-500`}
 	}
 `;
 
 const FeatureText = tw.div`mt-4 md:mt-0 md:ml-4 text-center md:text-left`;
-const FeatureHeading = tw.div`font-bold text-lg text-primary-500`;
+const FeatureHeading = tw.div`font-bold text-lg text-primaryy-500`;
 const FeatureDescription = tw.div`mt-1 text-sm`;
 
 const PrimaryButton = tw(PrimaryButtonBase)`mt-8 md:mt-10 text-sm inline-block mx-auto md:mx-0`;
@@ -44,7 +44,7 @@ export default ({
 	subheading = 'Our Expertise',
 	heading = (
 		<>
-			We have a <span tw='text-primary-500'>dedicated</span> team of financial experts.
+			We have a <span tw='text-primaryy-500'>dedicated</span> team of financial experts.
 		</>
 	),
 	description = ' Our team consists of seasoned professionals with extensive experience in financial auditing, taxation, and reporting. With a meticulous approach and a focus on client success, we pride ourselves on delivering high-quality services tailored to your needs.',
@@ -52,6 +52,7 @@ export default ({
 	primaryButtonUrl = 'https://timerse.com',
 	features = null,
 	textOnLeft = true,
+	variant = 1,
 }) => {
 	// The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
 
@@ -89,7 +90,7 @@ export default ({
 				</ImageColumn>
 				<TextColumn textOnLeft={textOnLeft}>
 					<TextContent>
-						<Subheading>{subheading}</Subheading>
+						<Subheading css={variant === 2 ? tw`text-primaryy-500` : ''}>{subheading}</Subheading>
 						<Heading>{heading}</Heading>
 						<Description>{description}</Description>
 						<Features>
