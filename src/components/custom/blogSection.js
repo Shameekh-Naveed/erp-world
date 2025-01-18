@@ -3,6 +3,9 @@ import tw from 'twin.macro';
 import styled from 'styled-components';
 import { SectionHeading, Subheading as SubheadingBase } from 'components/misc/Headings.js';
 import { SectionDescription } from 'components/misc/Typography.js';
+import Image1 from '../../images/projects/pic1.jpg';
+import Image2 from '../../images/projects/pic2.jpg';
+import Image3 from '../../images/projects/pic3.jpg';
 
 // const Section = tw.section`py-16 px-4 md:px-6`;
 // const Container = tw.div`max-w-6xl mx-auto`;
@@ -137,10 +140,7 @@ export default function BlogSection() {
 				<VerticalSpacer />
 				<Grid>
 					<Card>
-						<CardImage
-							src='https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-OSO7SR335HvnP6gDKA86Rup3kykbEF.png'
-							alt='Office meeting space'
-						/>
+						<CardImage src={Image1} alt='Office meeting space' />
 						<CardContent>
 							<CardTitle>Sargodha Audit Project</CardTitle>
 							<CardDescription>
@@ -151,10 +151,7 @@ export default function BlogSection() {
 						</CardContent>
 					</Card>
 					<Card>
-						<CardImage
-							src='https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-OSO7SR335HvnP6gDKA86Rup3kykbEF.png'
-							alt='Team collaboration'
-						/>
+						<CardImage src={Image2} alt='Team collaboration' />
 						<CardContent>
 							<CardTitle>Payment SOP Optimization</CardTitle>
 							<CardDescription>
@@ -165,10 +162,7 @@ export default function BlogSection() {
 						</CardContent>
 					</Card>
 					<Card>
-						<CardImage
-							src='https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-OSO7SR335HvnP6gDKA86Rup3kykbEF.png'
-							alt='Financial planning session'
-						/>
+						<CardImage src={Image3} alt='Financial planning session' />
 						<CardContent>
 							<CardTitle>Tax Savings Initiative</CardTitle>
 							<CardDescription>
