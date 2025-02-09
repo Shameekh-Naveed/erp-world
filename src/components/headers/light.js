@@ -83,7 +83,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 			{/* <NavLink href='/#' tw='lg:ml-12!'>
 				Login
 			</NavLink> */}
-			<PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href='/#'>
+			<PrimaryLink css={roundedHeaderButton && tw`rounded-full`} target='_blank' href='https://erptechnoworld.com'>
 				Visit ERP
 			</PrimaryLink>
 		</NavLinks>,

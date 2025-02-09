@@ -47,7 +47,7 @@ export default ({
 			We have a <span tw='text-primaryy-500'>dedicated</span> team of financial experts.
 		</>
 	),
-	description = ' Our team consists of seasoned professionals with extensive experience in financial auditing, taxation, and reporting. With a meticulous approach and a focus on client success, we pride ourselves on delivering high-quality services tailored to your needs.',
+	description = 'Our team consists of seasoned professionals with extensive experience in financial auditing, taxation, and reporting. With a meticulous approach and a focus on client success, we pride ourselves on delivering high-quality services tailored to your needs.',
 	primaryButtonText = 'See Our Portfolio',
 	primaryButtonUrl = 'https://timerse.com',
 	features = null,

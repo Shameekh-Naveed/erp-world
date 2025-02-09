@@ -10,7 +10,7 @@ import { ReactComponent as SvgDecoratorBlob1 } from '../../images/svg-decorator-
 import DesignIllustration from '../../images/hero.svg';
 import MazenLogo from 'images/mazen.jpeg';
 import ConceptLogo from 'images/concept-school-logo.png';
-import CustomersLogoStripImage from '../../images/customers-logo-strip.png';
+import DarearqmLogo from 'images/darearqmLogo.png';
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row lg:items-center max-w-screen-xl mx-auto py-20 md:py-24 gap-2`;
@@ -70,7 +70,7 @@ export default ({ roundedHeaderButton }) => {
 						<CustomersLogoStrip>
 							<p>Our TRUSTED Clients</p>
 							<ImagesStrip>
-								<Image src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVR-ObVGXjPcpMsc2ukHadEJCCTQDAavONiA&s'} />
+								<Image src={DarearqmLogo} />
 								<Image src={MazenLogo} />
 								<Image src={ConceptLogo} />
 							</ImagesStrip>

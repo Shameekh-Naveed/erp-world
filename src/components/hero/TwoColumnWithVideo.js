@@ -62,7 +62,7 @@ export default ({
 	heading = 'Revolutionize Your Organization with ERP World',
 	description = 'Simplify school management and enhance the learning experience. ERP World offers a comprehensive platform for administration, teachers, parents, and students. Streamline operations, improve communication, and make informed decisions with our powerful tools.',
 	primaryButtonText = 'Visit ERP',
-	primaryButtonUrl = '#',
+	primaryButtonUrl = 'https://erptechnoworld.com',
 	watchVideoButtonText = 'Watch Video',
 	watchVideoYoutubeUrl = 'https://www.youtube.com/embed/_GuOjXYl5ew',
 	imageSrc = DesignIllustration,
@@ -82,7 +82,7 @@ export default ({
 						<Heading>{heading}</Heading>
 						<Paragraph>{description}</Paragraph>
 						<Actions>
-							<PrimaryButton as='a' href={primaryButtonUrl}>
+							<PrimaryButton as='a' href={primaryButtonUrl} target='_blank'>
 								{primaryButtonText}
 							</PrimaryButton>
 							<WatchVideoButton onClick={toggleModal}>
@@ -111,7 +111,7 @@ export default ({
 						<CloseIcon tw='w-6 h-6' />
 					</CloseModalButton>
 					<div className='content'>
-						{/* <ResponsiveVideoEmbed url={watchVideoYoutubeUrl} tw='w-full' /> */}
+						<ResponsiveVideoEmbed url={'https://res.cloudinary.com/dm7rm8goc/video/upload/v1739059943/ERP_World_Ad_1.mp4'} tw='w-full' />
 					</div>
 				</StyledModal>
 			</Container>

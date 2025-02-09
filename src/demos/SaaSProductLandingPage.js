@@ -19,6 +19,7 @@ import Testimonial from 'components/testimonials/ThreeColumnWithProfileImage.js'
 import DownloadApp from 'components/cta/DownloadApp.js';
 import MazenLogo from 'images/mazen.jpeg';
 import ConceptLogo from 'images/concept-school-logo.png';
+import DarearqmLogo from 'images/darearqmLogo.png';
 
 export default () => {
 	const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
@@ -101,6 +102,15 @@ export default () => {
 						customerName: 'Shameekh Naveed',
 						customerTitle: 'Founder, EventsNYC',
 					},
+					{
+						stars: 5,
+						imageSrc:
+							'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80',
+						heading: 'Love the Developer Experience and Design Principles !',
+						quote: `ERP World has made school administration seamless. The platform is user-friendly, efficient, and packed with essential features like attendance tracking, fee management, and real-time communication. The mobile app is a great plus for parents and teachers. Highly recommended!`,
+						customerName: 'Muhammad Asif',
+						customerTitle: 'Founder, EventsNYC',
+					},
 				]}
 			/>
 			<FAQ
@@ -179,13 +189,7 @@ const Brands = () => (
 		<ContentContainer>
 			<Heading>Trusted by Pakistans most innovative schools</Heading>
 			<LogosGrid>
-				<LogoImage
-					src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVR-ObVGXjPcpMsc2ukHadEJCCTQDAavONiA&s'
-					alt='Dar-e-Arqam Schools'
-					width={158}
-					height={48}
-					lgColSpan1
-				/>
+				<LogoImage src={DarearqmLogo} alt='Dar-e-Arqam Schools' width={158} height={48} lgColSpan1 />
 				<LogoImage src={MazenLogo} alt='Mazen Schools' width={158} height={48} lgColSpan1 />
 				<LogoImage
 					src={ConceptLogo}
