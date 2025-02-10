@@ -11,6 +11,14 @@ import { ReactComponent as SvgDotPattern } from 'images/dot-pattern.svg';
 import { ReactComponent as BriefcaseIcon } from 'feather-icons/dist/icons/briefcase.svg';
 import { ReactComponent as MoneyIcon } from 'feather-icons/dist/icons/dollar-sign.svg';
 
+import AIIcon from 'images/Used/icons8-ai-50.png';
+import CommunicationIcon from 'images/Used/icons8-communication-50.png';
+import PRIcon from 'images/Used/icons8-pr-50.png';
+import TeamIcon from 'images/Used/icons8-team-32.png';
+import SoftwareIcon from 'images/Used/icons8-software-50.png';
+import ERPIcon from 'images/Used/icons8-erp-80.png';
+import ApplicationIcon from 'images/Used/icons8-application-50.png';
+
 const Container = tw.div`relative flex flex-col items-center`;
 const TwoColumnContainer = tw.div`pb-20 md:pb-24 flex flex-col items-center`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-8 items-center`;
@@ -61,6 +69,9 @@ const FeatureIconContainer = styled.div`
   svg {
 		${tw`w-5 h-5`}
 	}
+	img {
+		${tw`w-5 h-5`}
+	}
 `;
 const FeatureHeading = tw.div`ml-3 font-bold text-xl`;
 
@@ -99,52 +110,52 @@ export default ({
 
 	const defaultFeatures = [
 		{
-			Icon: BriefcaseIcon,
+			Icon: CommunicationIcon,
 			title: 'Strategic Communication ',
 			description: 'Developing and implementing effective communication strategies to ensure brand consistency.',
 			iconContainerCss: tw`bg-teal-300 text-teal-800`,
 		},
 		{
-			Icon: MoneyIcon,
+			Icon: AIIcon,
 			title: 'AI-Driven Media Analysis',
 			description: 'Leveraging AI tools to analyze industry trends and optimize PR strategies.',
 			iconContainerCss: tw`bg-red-300 text-red-800`,
 		},
 		{
-			Icon: MoneyIcon,
+			Icon: PRIcon,
 			title: 'Virtual & Remote PR Management ',
 			description: 'Utilizing remote collaboration tools for virtual press conferences and media coordination.',
-			iconContainerCss: tw`bg-red-300 text-red-800`,
+			iconContainerCss: tw`bg-teal-300 text-teal-800`,
 		},
 		{
-			Icon: MoneyIcon,
+			Icon: TeamIcon,
 			title: 'Cross-Functional Team Collaboration ',
 			description: 'Leading projects that integrate marketing, media, and stakeholder engagement.',
-			iconContainerCss: tw`bg-teal-300 text-teal-800`,
+			iconContainerCss: tw`bg-red-300 text-red-800`,
 		},
 	];
 
 	const defaultFeaturesMobile = [
 		{
-			Icon: BriefcaseIcon,
+			Icon: SoftwareIcon,
 			title: 'Custom Software Development',
 			description: 'End-to-end software solutions tailored to your business needs. Scalable applications with seamless user experiences.',
 			iconContainerCss: tw`bg-teal-300 text-teal-800`,
 		},
 		{
-			Icon: MoneyIcon,
+			Icon: ApplicationIcon,
 			title: 'Web & Mobile Application Development',
 			description: 'Responsive websites mobile and desktop applications. Cross-platform solutions for iOS and Android.',
 			iconContainerCss: tw`bg-red-300 text-red-800`,
 		},
 		{
-			Icon: MoneyIcon,
+			Icon: ERPIcon,
 			title: 'Enterprise Resource Planning (ERP) Systems',
 			description: 'ERP implementation for finance, HR, and supply chain management. Cloud-based ERP for real-time business analytics.',
-			iconContainerCss: tw`bg-red-300 text-red-800`,
+			iconContainerCss: tw`bg-teal-300 text-teal-800`,
 		},
 		{
-			Icon: MoneyIcon,
+			Icon: AIIcon,
 			title: 'AI-Powered Solutions',
 			description: 'AI-driven data analytics and business intelligence. Chatbots and automated customer support systems.',
 			iconContainerCss: tw`bg-red-300 text-red-800`,
@@ -187,7 +198,8 @@ export default ({
 									iconFilled={iconFilled}
 									iconRoundedFull={iconRoundedFull}
 									css={feature.iconContainerCss || iconContainerCss}>
-									{<feature.Icon />}
+									{/* {<feature.Icon />} */}
+									<img src={feature.Icon} alt='' />
 								</FeatureIconContainer>
 								<FeatureHeading>{feature.title}</FeatureHeading>
 							</FeatureHeadingContainer>
@@ -223,7 +235,8 @@ export default ({
 									iconFilled={iconFilled}
 									iconRoundedFull={iconRoundedFull}
 									css={feature.iconContainerCss || iconContainerCss}>
-									{<feature.Icon />}
+									{/* {<feature.Icon />} */}
+									<img src={feature.Icon} alt='' />
 								</FeatureIconContainer>
 								<FeatureHeading>{feature.title}</FeatureHeading>
 							</FeatureHeadingContainer>
