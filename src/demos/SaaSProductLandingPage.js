@@ -20,6 +20,9 @@ import DownloadApp from 'components/cta/DownloadApp.js';
 import MazenLogo from 'images/mazen.jpeg';
 import ConceptLogo from 'images/concept-school-logo.png';
 import DarearqmLogo from 'images/darearqmLogo.png';
+import Asif from 'images/Used/Asif.png';
+import Nadeem from 'images/Used/Nadeem.png';
+import Shameekh from 'images/Used/Shameekh.png';
 
 export default () => {
 	const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
@@ -86,8 +89,7 @@ export default () => {
 				testimonials={[
 					{
 						stars: 5,
-						imageSrc:
-							'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80',
+						imageSrc: Nadeem,
 						heading: 'Amazing User Experience',
 						quote: `The analytics and reporting features of ERP World have been game-changers for us. We can now make data-driven decisions that positively impact our school's operations and academic performance. Highly recommended!`,
 						customerName: 'Nadeem Aslam',
@@ -95,8 +97,7 @@ export default () => {
 					},
 					{
 						stars: 5,
-						imageSrc:
-							'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80',
+						imageSrc: Shameekh,
 						heading: 'Love the Developer Experience and Design Principles !',
 						quote: `ERP World has been a fantastic resource for me as a parent. I can easily monitor my child's attendance, grades, and upcoming events. The communication features allow me to stay connected with the school and teachers. It's a great tool for fostering parent-teacher collaboration`,
 						customerName: 'Shameekh Naveed',
@@ -104,8 +105,7 @@ export default () => {
 					},
 					{
 						stars: 5,
-						imageSrc:
-							'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80',
+						imageSrc: Asif,
 						heading: 'Love the Developer Experience and Design Principles !',
 						quote: `ERP World has made school administration seamless. The platform is user-friendly, efficient, and packed with essential features like attendance tracking, fee management, and real-time communication. The mobile app is a great plus for parents and teachers. Highly recommended!`,
 						customerName: 'Muhammad Asif',
