@@ -29,7 +29,8 @@ import ContactUsPage from 'pages/ContactUs.js';
 // import ThankYouPage from 'ThankYouPage.js';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import AgencyLandingPage from 'demos/AgencyLandingPage';
+import FinancialServices from 'demos/FinancialServices';
+import DigitalServices from 'demos/DigitalServices';
 
 export default function App() {
 	// If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -40,9 +41,9 @@ export default function App() {
 			<GlobalStyles />
 			<Router>
 				<Routes>
-					{/* <Route path='/thank-you' element={<ThankYouPage />} /> */}
 					<Route path='/contact-us' element={<ContactUsPage />} />
-					<Route path='/financial' element={<AgencyLandingPage />} />
+					<Route path='/digital' element={<DigitalServices />} />
+					<Route path='/financial' element={<FinancialServices />} />
 					<Route path='/' element={<SaaSProductLandingPage />} />
 				</Routes>
 			</Router>

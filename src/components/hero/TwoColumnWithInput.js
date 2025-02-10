@@ -47,7 +47,7 @@ const CustomersLogoStrip = styled.div`
 	}
 `;
 
-export default ({ roundedHeaderButton }) => {
+export default ({ roundedHeaderButton, header, paragraph, imgSrc = DesignIllustration }) => {
 	return (
 		<>
 			<Header roundedHeaderButton={roundedHeaderButton} />
@@ -55,13 +55,15 @@ export default ({ roundedHeaderButton }) => {
 				<TwoColumn>
 					<LeftColumn>
 						<Heading>
-							Empowering Your Finances, <span tw='text-primaryy-500'>Ensuring Your Success.</span>
+							{header}
+							{/* Empowering Your Finances, <span tw='text-primaryy-500'>Ensuring Your Success.</span> */}
 						</Heading>
 						<Paragraph css={tw`text-justify pr-4`}>
-							We specialize in delivering top-notch financial auditing, taxation, and reporting solutions tailored to your needs. Our
+							{paragraph}
+							{/* We specialize in delivering top-notch financial auditing, taxation, and reporting solutions tailored to your needs. Our
 							mission is to simplify complex financial processes, ensure compliance, and uncover opportunities for growth. Whether it’s
 							streamlining your accounts or optimizing tax strategies, we’re here to help you achieve financial clarity and confidence.
-							Let us be your trusted partner in building a stronger financial future.
+							Let us be your trusted partner in building a stronger financial future. */}
 						</Paragraph>
 						{/* <Actions>
               <input type="text" placeholder="Your E-mail Address" />
@@ -79,7 +81,7 @@ export default ({ roundedHeaderButton }) => {
 					</LeftColumn>
 					<RightColumn>
 						<IllustrationContainer>
-							<img tw='min-w-0 w-full max-w-lg xl:max-w-3xl' src={DesignIllustration} alt='Design Illustration' />
+							<img tw='min-w-0 w-full max-w-lg xl:max-w-3xl' src={imgSrc} alt='Design Illustration' />
 						</IllustrationContainer>
 					</RightColumn>
 				</TwoColumn>

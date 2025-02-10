@@ -71,7 +71,17 @@ const statistics = [
 
 export default () => (
 	<AnimationRevealPage>
-		<Hero />
+		<Hero
+			header={
+				<>
+					Empowering Your Finances, <span tw='text-primaryy-500'>Ensuring Your Success.</span>
+				</>
+			}
+			paragraph=' We specialize in delivering top-notch financial auditing, taxation, and reporting solutions tailored to your needs. Our
+							mission is to simplify complex financial processes, ensure compliance, and uncover opportunities for growth. Whether it’s
+							streamlining your accounts or optimizing tax strategies, we’re here to help you achieve financial clarity and confidence.
+							Let us be your trusted partner in building a stronger financial future.'
+		/>
 		<MainFeature
 			statistics={statistics}
 			heading={
